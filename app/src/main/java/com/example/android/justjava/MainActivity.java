@@ -18,21 +18,28 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
     }
 
+
+    int numberOfCoffees=1;
     /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int numberOfCoffees = 2;
         display(numberOfCoffees);
         displayPrice(numberOfCoffees * 5);
     }
+    /**
+     * This method is called when the minus button is clicked.
+     */
     public void minusOrder(View view) {
-        int numberOfCoffees = 1;
+        numberOfCoffees--;
         display(numberOfCoffees);
         displayPrice(numberOfCoffees*5);
     }
+    /**
+     * This method is called when the plus button is clicked.
+     */
     public void plusOrder(View view) {
-        int numberOfCoffees = 3;
+        numberOfCoffees++;
         display(numberOfCoffees);
         displayPrice(numberOfCoffees*5);
     }
