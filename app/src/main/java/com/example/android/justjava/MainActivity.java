@@ -33,7 +33,6 @@ public class MainActivity extends ActionBarActivity {
     public void minusOrder(View view) {
         numberOfCoffees--;
         display(numberOfCoffees);
-        displayPrice(numberOfCoffees*5);
     }
     /**
      * This method is called when the plus button is clicked.
@@ -41,7 +40,6 @@ public class MainActivity extends ActionBarActivity {
     public void plusOrder(View view) {
         numberOfCoffees++;
         display(numberOfCoffees);
-        displayPrice(numberOfCoffees*5);
     }
 
     /**
