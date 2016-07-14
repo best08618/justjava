@@ -24,6 +24,16 @@ public class MainActivity extends ActionBarActivity {
     public void submitOrder(View view) {
         int numberOfCoffees = 2;
         display(numberOfCoffees);
+        displayPrice(numberOfCoffees * 5);
+    }
+    public void minusOrder(View view) {
+        int numberOfCoffees = 1;
+        display(numberOfCoffees);
+        displayPrice(numberOfCoffees*5);
+    }
+    public void plusOrder(View view) {
+        int numberOfCoffees = 3;
+        display(numberOfCoffees);
         displayPrice(numberOfCoffees*5);
     }
 
