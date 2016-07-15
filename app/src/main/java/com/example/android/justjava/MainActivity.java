@@ -22,7 +22,7 @@ public class MainActivity extends ActionBarActivity {
     /**
      * This method is called when the order button is clicked.
      */
-    public void submitOrder(View view) {
+    public void OrderSummary(View view) {
         int price;
         price= calculateprice(number);
         summary(price, number);
@@ -38,7 +38,7 @@ public class MainActivity extends ActionBarActivity {
     public void summary(int price, int number)
     {
 
-        String  summaryMessage= "Quantity: "+ number+"\n"+"TOTAL: "+ price+"$"+"\nThank you:)";
+        String  summaryMessage="Summary:\n"+"Quantity: "+ number+"\n"+"TOTAL: "+ price+"$"+"\nThank you:)";
         displayMessage(summaryMessage);
 
     }

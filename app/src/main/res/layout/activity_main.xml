@@ -65,10 +65,9 @@
         android:id="@+id/price_text_view"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
        android:textSize="16sp"
-        android:text="TOTAL:"
+        android:text="Order Summary:"
     android:paddingBottom="8dp"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -91,7 +90,7 @@
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="submitOrder"
+        android:onClick="OrderSummary"
         android:text="ORDER"
        />
     </LinearLayout>
